@@ -12,6 +12,18 @@ import Direction
 import GameBoard
 import Player
 
+{-
+* State = 플레이어, 방향, 타겟, 점수카운터, 게임종료여부
+ex) `State [(0,0)] DOWN Nothing 0 False`
+타겟은 없을 수도 있으므로 Maybe 로 작성
+
+* State 내부 타입에
+player :: Player로 이름을 정할 경우
+아래 메서드의 정의가 헷갈려서
+player -> getPlayer로 정의함.
+
+* 각 옵션에 따른 setter 함수 정의.
+-}
 data State =
     State
         { getPlayer :: Player

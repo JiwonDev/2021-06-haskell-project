@@ -1,10 +1,13 @@
 module GameBoard where
 
 import Control.Monad
-
+{-
+GameBoard.hs 작성
+스크린 사이즈를 이용하여 block, grid(게임판), screen 관련 함수 정의
+-}
 -- 그리드 가로 사이즈 (개수)
 gridWidth :: Num a => a
-gridWidth = 30
+gridWidth = 40
 
 -- 그리드 세로 사이즈
 gridHeight :: Num a => a
@@ -14,7 +17,7 @@ gridHeight = 30
 -- Graphics.Gloss.Interface.Environment 에 있는 getScreenSize 이용
 -- fst getScreenSize, snd getScreenSize
 getScreenSize :: IO (Int, Int)
-getScreenSize = return (800,  800)
+getScreenSize = return (800,  600)
 
 -- 픽셀의 가로 갯수 (스크린 내에서)
 screenWidth :: Num a => IO a
