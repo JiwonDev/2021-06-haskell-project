@@ -28,7 +28,7 @@ library:
   source-dirs: src
 
 executables:
-  haskell-gui-snake-exe:
+  jiwon:
     main:                Main.hs
     source-dirs:         app
     ghc-options:
@@ -39,7 +39,7 @@ executables:
     - haskell-project
 
 tests:
-  haskell-gui-snake-test:
+  haskell-project-test:
     main:                Spec.hs
     source-dirs:         test
     ghc-options:
