@@ -20,7 +20,7 @@ stack exec jiwon
 
 
 참고로 stack 을 이용하여 gloss 설치시 필수 dll 파일이 없어서 실행되지 않음. 따로 설치해주어야함
-( [issues #1](https://github.com/JiwonDev/haskell-project/issues/1, "gloss 라이브러리 빌드 시 glut.dll 관련 에러 (user error)")
+( [issues #1](https://github.com/JiwonDev/haskell-project/issues/1 "gloss 라이브러리 빌드 시 glut.dll 관련 에러 (user error)")
 )
 
 ```haskell
