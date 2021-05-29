@@ -1,7 +1,6 @@
-{- 메인코드 작성 -}
+module Main where
+
+import Game
+
 main :: IO ()
-main = do
-    putStrLn "Hello, world!"
-    putStrLn "Hello, what's your name?"
-    name <- getLine
-    putStrLn ("Hey " ++ name ++ "!")
+main = game
