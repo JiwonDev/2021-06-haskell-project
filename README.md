@@ -16,8 +16,12 @@ stack exec jiwon
 ```
 ## 프로젝트 개요
 하스켈 gloss 그래픽 모듈을 이용한 간단한 꼬리잡기 게임.
-Graphics.Gloss.Interface.IO.Game 을 사용하여 구현하였음.
-https://hackage.haskell.org/package/gloss-1.13.2.1/docs/Graphics-Gloss-Interface-IO-Game.html
+[Graphics.Gloss.Interface.IO.Game]((https://hackage.haskell.org/package/gloss-1.13.2.1/docs/Graphics-Gloss-Interface-IO-Game.html)) 을 사용하여 구현하였음.
+
+
+참고로 stack 을 이용하여 gloss 설치시 필수 dll 파일이 없어서 실행되지 않음. 따로 설치해주어야함
+( [issues #1](https://github.com/JiwonDev/haskell-project/issues/1, "gloss 라이브러리 빌드 시 glut.dll 관련 에러 (user error)")
+)
 
 ```haskell
 game :: IO ()
@@ -74,6 +78,14 @@ src// {- 소스코드 -}
                 , getCounter :: Int
                 , getPaused :: Bool
                 }
+```
+```alex
+haskell-project.cabel -- 빌드된 프로젝트 설정파일 (자동생성)
+haskell-project.iml -- 빌드된 프로젝트 설정파일 (자동생성)
+package.yaml -- 프로젝트 설정파일
+stack.yaml -- stack 설정파일 
+setup.hs -- 프로젝트 빌드 전 stack setup 용. 이 프로젝트에서는 사용하지 않음.
+test/ -- test app 진입점. package.yaml 에서 설정 할 수 있음.
 ```
 
 ## 만드는데 도움이 된 Reference
