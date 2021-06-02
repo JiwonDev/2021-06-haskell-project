@@ -99,3 +99,5 @@ https://github.com/DarkKnight2000/InfinityLoop
 https://hoogle.haskell.org/
 
 https://github.com/Jonathas-Conceicao/Snake-Haskell
+
+https://haskell-explained.gitlab.io/blog/posts/2019/08/27/pattern-synonyms/index.html
